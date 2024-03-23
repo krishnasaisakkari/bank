@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+       /* landing page animaton */
+       .section2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background:#000000;
+                width: 100%;
+                height: 900px;
+                background-image: url(upendra/DSC01752.JPG);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* background-attachment: fixed; */
+                background-position: center;
+                }
+                .imggtext{
+                    color: white;
+                    position: absolute;
+                    display: flex;
+                    top: 770px;
+                    font-size: 30px;
+                    animation:fade11 0.7s forwards;
+                    animation-timeline: view();
+                    animation-range-start: cover;
+                    animation-range-end: contain;
+                    animation-delay:;
+                    opacity: 0;
+                    height: 100px;
+                
+                }
+
+                @keyframes fade11{
+                    from{
+                        opacity: 0;
+                        bottom:0;
+                    }
+                    to{
+                        opacity:1;
+                        bottom: 100%;
+                    }
+                }
+                
+
+                .imgtext{
+                     color: white;
+                    position: absolute;
+                    display: inline-flex;
+                    top: 230px;
+                    font-size: 100px;
+                    animation:top 0.9s forwards;
+                    animation-delay: .6s;
+                    opacity: 0;
+                    justify-content: first baseline;
+                    height: 100px;
+                }
+
+                .imgtext2{
+                    color: white;
+                    display: inline-flex;
+                    position: absolute;
+                    top: 350px;
+                    font-size: 40px;
+                    padding-left: ;
+                    animation:top 0.9s forwards;
+                    animation-delay: .6s;
+                    opacity: 0;
+                    height: 100px;
+                }
+                @keyframes top{
+                    0%{
+                        opacity: 0;
+                        top: 100px;
+                    }
+                    100%{
+                        opacity: 100%;
+                        bottom: 0;
+                    }
+                }
+                /* landing page animation ends */
+
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-12" style="height: auto;">
+         <div class="row" id="home">
+            <div>
+         <div class="section2">
+            <div class="imgtext">
+                To The Girl
+            </div>
+            <div class="imgtext2">who<span style="color: red;">&nbsp stole</span>&nbsp my<span style="color: red;">&nbsp heart </span></div>
+            <div class="imgtext2" style="padding-top:50px;">Happy birthday to the person who makes my heart skip a beat<br>
+              On your special day, I want to let you know how much you mean to me<br>
+              Wishing you a birthday that's as amazing as you are, my ...🖤✨</div>
+            <div class="imgtext2" style="padding-top: 250px;">i feel&nbsp;<span style="color: red;">alive</span>&nbsp;with every moment i spent with &nbsp;<span style="color: red;">you</span></div>
+              <div class="imgtext" style="padding-top: 400px;">thank you for everything</div>
+          </div>
+
+</div>
+</div>
+
+</body>
+</html>
