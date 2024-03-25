@@ -11,6 +11,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .kk{
+            padding-left: 170px; 
+            padding-top: 100px;
+        }
+            
+
+    </style>
 </head>
 <body>
     <div class="row mt-5">
@@ -18,7 +26,7 @@
     </div>
     <div class="container">
         <div class="row" style="background-color: rgb(219, 215, 215); border-radius: 10rem 5rem 10rem;">
-            <div class="col-sm-10" style="padding-left: 170px; padding-top: 100px;"><b>NAME:<i>u.prabhas </i></b><br> <b>BANK ACCOUNT NO:<i>04299904 </i></b>
+            <div class="col-sm-10 kk"><b>NAME:<i>u.prabhas </i></b><br> <b>BANK ACCOUNT NO:<i>04299904 </i></b>
                <br> <b>IFSC: <i>KBIN0007</i> </b> <br> <b>NOMINEE NAME: <i>anushka</i> </b> <br> <b>ADDRESS: <i>prabhas raju gari illu/bhimavaram/ap/india.</i> </b>
             </div>
             <div class="col-sm-2">
@@ -26,5 +34,46 @@
             </div>
         </div>
     </div>
+    <form action="">
+        <div class="container mt-5" style="background-color: rgb(231, 229, 227); border-radius: 2rem 5rem 10rem;">
+        <div class="row" style="height: 100px;">
+            <div class=" form-outline col-sm-3 mt-3">
+                <input type="text" class="form-control" id="deb" placeholder="current amount">
+                <!-- <select type="text" class="form-control" placeholder="select">  
+                    <option value="" id="deb"> debit</option>
+                    <option value="" id="cred">credit</option>
+                    </select> -->
+            </div>
+            <div class="col-sm-4 mt-3">
+            <input type="text" class="form-control" placeholder="enter amount" id="amo">
+        </div>
+        <div class="col-sm-2 mt-3">
+        <input type="text" class="form-control" id="ope" placeholder="type debit">
+        </div>
+        <div class="col-sm-2 mt-3">
+            <button class="btn btn-primary" onclick="sub()">proceed</button>
+        </div>
+       
+        </div>
+        </div>
+    </form>
+ 
+    <script>
+        function sub(){
+            // const x=100000;
+        let debit=document.getElementById("deb").value;
+        let debitValue=parseInt(debit);
+        // const z=(x==debit);
+        // alert(z);
+        let amount=document.getElementById("amo").value;
+       let amountValue=parseInt(amount);
+       let opt=document.getElementById("ope").value;
+    switch(opt){
+        case'debit':
+        document.write(debitValue-amountValue);
+    }
+    }
+    </script>
+
 </body>
 </html>
