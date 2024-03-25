@@ -14,7 +14,7 @@
     <style>
         .kk{
             padding-left: 170px; 
-        
+            padding-top: 100px;
         }
             
 
@@ -28,62 +28,51 @@
         <div class="row" style="background-color: rgb(219, 215, 215); border-radius: 10rem 5rem 10rem;">
             <div class="col-sm-10 kk"><b>NAME:<i>u.prabhas </i></b><br> <b>BANK ACCOUNT NO:<i>04299904 </i></b>
                <br> <b>IFSC: <i>KBIN0007</i> </b> <br> <b>NOMINEE NAME: <i>anushka</i> </b> <br> <b>ADDRESS: <i>prabhas raju gari illu/bhimavaram/ap/india.</i> </b>
-           <br> <b>CURRENT BALANCE: <i style="color: darkblue;">5000000.00</i> </b>
             </div>
             <div class="col-sm-2">
-                <img src="images/prabha.jpg" height="120px" width="100px">
+                <img src="images/prabha.jpg" alt="">
             </div>
         </div>
     </div>
     <form action="">
         <div class="container mt-5" style="background-color: rgb(231, 229, 227); border-radius: 2rem 5rem 10rem;">
         <div class="row" style="height: 100px;">
-            <div class="col-sm-1"></div>
-            <div class=" card col-sm-3">
-                <center><h2>debit</h2></center>
-                <div class="btn btn-outline-primary" id="deb" placeholder="current amount" onclick="debit()">proceed</div>
+            <div class=" form-outline col-sm-3 mt-3">
+                <input type="text" class="form-control" id="deb" placeholder="current amount">
                 <!-- <select type="text" class="form-control" placeholder="select">  
                     <option value="" id="deb"> debit</option>
                     <option value="" id="cred">credit</option>
                     </select> -->
             </div>
-            <div class="col-sm-3 card">
-                <center><h2>credit</h2></center>
-                <button class="btn btn-outline-primary" id="deb" placeholder="current amount">proceed</button>
-               
+            <div class="col-sm-4 mt-3">
+            <input type="text" class="form-control" placeholder="enter amount" id="amo">
         </div>
-        <div class="col-sm-3 card">
-            <center><h2>other transactions</h2></center>
-            <button class="btn btn-outline-primary" id="deb" placeholder="current amount">proceed</button>
-           
+        <div class="col-sm-2 mt-3">
+        <input type="text" class="form-control" id="ope" placeholder="type debit">
         </div>
-        <div class="col-sm-1 mt-4">
-        <div class="btn btn-primary" onclick="sub()">log out</div>
+        <div class="col-sm-2 mt-3">
+            <button class="btn btn-primary" onclick="sub()">proceed</button>
         </div>
+       
         </div>
         </div>
     </form>
+ 
     <script>
         function sub(){
-            let x=+prompt("enter pin");
-            if(x==1128){
-                window.location.href="index.html";
-                alert("log out success")
-            }
-            else{
-                alert("enter valid pin")
-            }
-         }
-
-         function debit(){
-            let pin=+prompt("enter security pin");
-            if(pin==1128){
-            window.location.href="debit.html";
-            }
-            else{
-                alert("enter valid pin")
-            }
-         }
+            // const x=100000;
+        let debit=document.getElementById("deb").value;
+        let debitValue=parseInt(debit);
+        // const z=(x==debit);
+        // alert(z);
+        let amount=document.getElementById("amo").value;
+       let amountValue=parseInt(amount);
+       let opt=document.getElementById("ope").value;
+    switch(opt){
+        case'debit':
+        document.write(debitValue-amountValue);
+    }
+    }
     </script>
 
 </body>
