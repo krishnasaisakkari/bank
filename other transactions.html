@@ -15,10 +15,10 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="card col-sm-4">
-                <center><h3>Credit Amount</h3></center>
+                <center><h3>Debit Amount</h3></center>
                 <form action="">
-                    <input type="text" class="form-control col-sm-2" id="deb" placeholder="amount of credit">
-                    <input type="text" class="form-control col-sm-2 mt-2" id="deb2" placeholder="type credit">
+                    <input type="text" class="form-control col-sm-2" id="deb" placeholder="enter amount">
+                    <input type="text" class="form-control col-sm-2 mt-2" id="deb2" placeholder="bank account number">
                     <div class="row mt-3">
                         <div class="col-sm-4"></div>
                         <div class="col-sm-2">
@@ -47,12 +47,12 @@
     //    let amountValue=parseInt(amount);
        let opt=document.getElementById("deb2").value;
     //    let optValue=parseFloat(opt)
-    if( pin===1234){
-        document.write(xValue+debitValue);
+    if( pin===1234 && debit<=5000000 && opt==999999){
+        document.write(xValue-debitValue);
         alert("transaction successful");
     }
     else{
-        alert("inavlid pin");
+        alert("inavlid pin or infunds");
         // location.href="-blank";
     }
     }
