@@ -49,12 +49,12 @@
             </div>
             <div class="col-sm-3 card">
                 <center><h2>credit</h2></center>
-                <button class="btn btn-outline-primary" id="deb" placeholder="current amount">proceed</button>
+                <button class="btn btn-outline-primary" id="deb" placeholder="current amount" onclick="Cred()">proceed</button>
                
         </div>
         <div class="col-sm-3 card">
             <center><h2>other transactions</h2></center>
-            <button class="btn btn-outline-primary" id="deb" placeholder="current amount">proceed</button>
+            <button class="btn btn-outline-primary" id="deb" placeholder="current amount" onclick="Oth()">proceed</button>
            
         </div>
         <div class="col-sm-1 mt-4">
@@ -84,6 +84,28 @@
                 alert("enter valid pin")
             }
          }
+
+         function Cred(){
+            let pin=+prompt("enter security pin");
+            if(pin==1128){
+            window.location.href="credit.html";
+            }
+            else{
+                alert("enter valid pin")
+            }
+         }
+
+         function Oth(){
+            let pin=+prompt("enter security pin");
+            if(pin==1128){
+            window.location.href="other.html";
+            }
+            else{
+                alert("enter valid pin")
+            }
+         }
+
+
     </script>
 
 </body>
