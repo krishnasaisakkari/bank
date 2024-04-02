@@ -9,6 +9,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         .kk{
+
+} 
+@media( max-width:1024px){
+    .kk{
+        margin-right: 5px;
+        background-color: red;
+    }
+}
+.c2{
+
+} 
+
+@media (max-width:1400px) {
+    .c2{
+        height: 130px;
+    }
+}
+ @media (max-width:768px) {
+    .c2{
+        height: 150px;
+    }
+}
+
+    </style>
 </head>
 <body>
     <div class="container mt-5" style="border-radius: 5rem 10rem; background-color: rgb(212, 211, 211);">
@@ -20,10 +46,11 @@
                     <input type="text" class="form-control col-sm-2" id="deb" placeholder="enter amount">
                     <input type="text" class="form-control col-sm-2 mt-2" id="deb2" placeholder="bank account number">
                     <div class="row mt-3">
-                        <div class="col-sm-4"></div>
+                        <div class="col-sm-3"></div>
                         <div class="col-sm-2">
                             <div class="btn btn-outline-danger" onclick="can()">cancle</div>
                             </div>
+                            <div class="col-sm-1"></div>
                             <div class="col-sm-2">
                             <div class="btn btn-outline-success" onclick="sub()">proceed</div>
                         </div>
