@@ -335,16 +335,19 @@
         transform: translateX(50px);
       }
     }
+    .ftr:hover{
+            text-decoration: underline red;
+        }
   </style>
 </head>
 <body>
   <div class="header">
-    <div class="logo"><h2>hello</h2></div>
+    <div class="logo"><h1 style="color: white;">KB</h1></div>
     <ul>
       <li><a href="#"><h4>Home</h4></a></li>
-      <li><a href="#"><h4>About</h4></a></li>
-      <li><a href="#"><h4>Services</h4></a></li>
-      <li><a href="#"><h4>contact</h4></a></li>
+      <li><a href="#about"><h4>About</h4></a></li>
+      <li><a href="#services"><h4>Services</h4></a></li>
+      <li><a href="#contact"><h4>contact</h4></a></li>
       <button class="btnLogin-popup"><h4>Log in</h4></button>
     </ul>
   </div>
@@ -406,30 +409,125 @@
       </form>
     </div>
   </div></center>
+  <div class="row" id="about">
+    <div class="col-12"><center><h1 style="color: white; border-bottom: 2px solid white; width: 300px;">About Us</h1></center></div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6"><h4 style="text-align: justify;color: azure;">Kits Bank is a fictional financial institution designed to provide comprehensive banking solutions with a focus on innovation, customer service, and community development. It aims to revolutionize the traditional banking experience by integrating advanced technology with personalized services.
 
-  <div class="demo">
+    </h4></div>
+    <div class="col-3"></div>
+  </div>
+
+  <div class="demo" id="services">
     <div class="box">
       <img src="images/undraw_Online_banking_re_kwqh.png" alt="">
       <div class="box2">
-        <h2>secure payments</h2>
+        <h2 style="color: white;">secure payments</h2>
       </div>
     </div>
 
     <div class="box">
       <img src="images/undraw_online_transactions_02ka.png" alt="">
       <div class="box2">
-        <h2>secure payments</h2>
+        <h2 style="color: white;">secure payments</h2>
       </div>
     </div>
 
     <div class="box">
       <img src="images/undraw_Pay_online_re_aqe6.png" alt="">
       <div class="box2">
-        <h2>secure payments</h2>
+        <h2 style="color: white;">secure payments</h2>
       </div>
     </div>
   </div>
+  <footer
+  class="text-center text-lg-start text-white mt-5"
+  style="background:linear-gradient(to top,black,rgb(85, 6, 160)
+  ">
+<!-- Grid container -->
+<div class="container p-4 pb-0" id="contact">
+<!-- Section: Links -->
+<section class="">
+<!--Grid row-->
+<div class="row">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+      Kits Bank
+    </h6>
+    <p>
+      The only place where you can find the quality
+    </p>
+  </div>
+  <!-- Grid column -->
 
+  <hr class="w-100 clearfix d-md-none" />
+
+  <!-- Grid column -->
+  <!-- Grid column -->
+
+  <hr class="w-100 clearfix d-md-none" />
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+    <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+      Membership
+    </h6>
+    <p class="ftr">
+      <a href="#" class="text-white" style="text-decoration: none;">Create an Account</a>
+    </p>
+    <p class="ftr">
+      <a href="#" class="text-white" style="text-decoration: none;">log in</a>
+    </p>
+    <p class="ftr">
+      <a href="#" class="text-white" style="text-decoration: none;">refer</a>
+    </p>
+    <p class="ftr">
+      <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+    </p>
+  </div>
+
+  <!-- Grid column -->
+  <hr class="w-100 clearfix d-md-none" />
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+    <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Contact</h6>
+    <p class="ftr"><i class="fas fa-home mr-3"></i>vizag,seethammadhara,tpt colony</p>
+    <p class="ftr"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+    <p class="ftr"><i class="fas fa-phone mr-3"></i> + 01 234 567 77</p>
+    <p class="ftr"><i class="fas fa-print mr-3"></i> + 01 234 567 77</p>
+  </div>
+  <!-- Grid column -->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-7 col-lg-8 text-center text-md-start">
+    <!-- Copyright -->
+    <div class="p-3">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >google.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+ 
+<!-- Grid container -->
+</footer>
   
   <script>
     const wrapper = document.querySelector('.wrapper');
